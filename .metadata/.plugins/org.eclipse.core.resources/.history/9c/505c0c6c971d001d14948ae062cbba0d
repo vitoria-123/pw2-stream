@@ -1,5 +1,4 @@
 import java.util.List;
-import java.util.Optional;
 
 public class ManipulacaoProdutos {
 
@@ -34,8 +33,7 @@ public class ManipulacaoProdutos {
 		p5.setCategoria(null);
 		p5.setPreco(10);
 		
-		List<Produto> list = List.of(p1, p2, p3, p4, p5);
-				
+		List<Produto> lista = List.of(p1, p2, p3, p4, p5);
 		
 		
 		/*System.out.println();
@@ -45,9 +43,9 @@ public class ManipulacaoProdutos {
 		lista.forEach(e ->{
 			System.out.println("Esse produto custa mais de 50: " + e.getNome());
 		});*/
-		Optional<Produto> existe = 
-		list.stream().filter(e -> e.getCategoria() == CategoriaEnum.bebida).findFirst();
-		if(existe.isPresent()) {
+		
+		lista.stream().filter(e -> e.getCategoria() == CategoriaEnum.bebida).findFirst();
+		if(lista.isPresent()) {
 			System.out.println("Tem bebida na compra");
 		}
 	}
