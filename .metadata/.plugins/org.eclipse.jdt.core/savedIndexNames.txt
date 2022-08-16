@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\Users\DELL\Desktop\PW2\emilly-vitoria\pw2-stream\.metadata\.plugins\org.eclipse.jdt.core
+4082041654.index
+1865797976.index
+1392625256.index
